@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Tic Tac Toe</h1>
+    <canvas id="tictactoe" width="800" height="800"></canvas>
+    <br />
+    <div id="gameseetings">
+      Player 1
+      <select name="player1" id="player1">
+        <option value="human">human</option>
+        <option value="easy">cpu (easy)</option>
+        <option value="hard">cpu (hard)</option>
+      </select><br />
+      Player 2 
+      <select name="player2" id="player2">
+        <option value="human">human</option>
+        <option value="easy">cpu (easy)</option>
+        <option value="hard">cpu (hard)</option>
+      </select><br />
+      Total number of games: <span id="totalGames"></span><br />
+      Player 1 wins: <span id="player1wins"></span><br />
+      Player 2 wins: <span id="player2wins"></span><br />
+      Cat games: <span id="catgamewins"></span><br />
+    </div>
+    Auto Reset<input type="checkbox" id="autoreset" name="autoreset" value="autoreset">
+    <button id="resetbtn">reset</button>
+  </body>
+  <script src="tictactoe.js"></script>
+  <script src="drawing.js"></script>
+  <script>
+    'use strict';
+    var game = new TicTacToeGame("#tictactoe");
+    game.resetGame();
+    resetGamebtn.addEventListener('mouseup', (e) => {
+      game.resetGame();
+    });
+  </script>
+</html>
