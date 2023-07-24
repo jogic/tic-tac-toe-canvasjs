@@ -1,5 +1,5 @@
 
-# [Tic-Tac-Toe HTML Canvas and JS](https://pages.github.com)
+# [Tic-Tac-Toe HTML Canvas and JS](https://jogic.github.io/tic-tac-toe-canvasjs)
 
 <picture>
   <source
@@ -17,4 +17,4 @@
 A simple Tic-Tac-Toe game created with HTML Canvas and JS
  - Easy/Hard CPU as player 1 or 2
 
-Link: https://pages.github.com
+Link: https://jogic.github.io/tic-tac-toe-canvasjs
